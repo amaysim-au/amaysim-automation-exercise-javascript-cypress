@@ -7,7 +7,7 @@ Base Test framework for a test automation exercise. This version is built with c
 ### Tests
 1. All tests are in the folder `cypress/e2e`. The test files have the name suffix `.spec.cy.js`.
 1. There's currently only one test `cypress/e2e/mobile_usage_history.spec.cy.js`. This test does the below:
-   1. Visit the amaysim home page, login as an existing customer and view the dashboad page. The username and password are read from the `cypress/fixtures/tesData.json` file.
+   1. Visit the amaysim home page, login as an existing customer and view the dashboad page. The username and password are read from the environment variables `CYPRESS_USERNAME` and `CYPRESS_PASSWORD`.
    1. From the dashboard page, click on the mobile service tile go to the mobile plan details page.
    1. On the Mobile Plan details page, click on the Usage History to see the usage history page, and perform a search in that page.
 1. The tests use the Page Object Model. The page classes are in `cypress/e2e/pageObjects`.
@@ -15,9 +15,6 @@ Base Test framework for a test automation exercise. This version is built with c
 
 ### Cypress Configuration
 These are in the file `cypress.config.js`. Among other things, it contains the base URL.
-
-### Test Data
-These are under the folder `cypress/fixtures`.
 
 ### Page Classes/Objects
 These are in the folder `cypress/e2e/pageObjects`
@@ -61,6 +58,10 @@ From inside the `amaysim-automation-exercise-javascript-cypress` folder, run the
 
 ## How to submit your code
 
+### Complete the exercise
+Please complete your exercise as per the instructions provided by the recruiter.
+
+**Prioritise  Quality  over  Quantity  in  your  tests. Your  code submission  will  be assessed more  on  how  well  written and how well structured the code is, rather than number of tests.**
 ### Push your changes into your repo
 1. Run `git status` to see all local changes.
 2. Once you are happy with the changes, run `git add .` to stage all your local changes.
