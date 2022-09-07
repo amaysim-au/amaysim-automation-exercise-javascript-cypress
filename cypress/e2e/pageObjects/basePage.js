@@ -7,7 +7,6 @@ class BasePage {
     cy.get(field)
       .should('be.visible')
       .type(value)
-      .should('have.value', value)
   }
 }
 

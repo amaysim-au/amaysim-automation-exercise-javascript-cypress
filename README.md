@@ -30,37 +30,44 @@ Install `git`. Please google for installation instructions. If you already have 
 ### Install Node and Npm
 Install `node` and `npm` on your machine. Please google for installation instructions. If you already have this installed, you dont need to do it again.
 
-### Create a fork for yourself and checkout the code
-1. On your browser, login to github.com.
-1. Navigate to this code repository.
-1. Fork this repository. as below:
-![Fork](/readme-assets/fork.png)
-![New Fork](/readme-assets/new_fork.png)
-If you need it, here are the detailed intructions on Github on how to do this: https://docs.github.com/en/get-started/quickstart/fork-a-repo
-1. Once you've created a fork, checkout the code, by running this in your terminal/command line: `git clone git@github.com:<your github username>/amaysim-automation-exercise-javascript-cypress.git`
-
-Note: **Please make all your changes on this fork, and NOT on the original repo.**
+### Clone the repository
+Checkout the code, by running this in your terminal/command line: `git clone git@github.com:<your github username>/amaysim-automation-exercise-javascript-cypress.git`
 
 ### Install dependancies
 1. Go to your folder where you checked out the code: `cd amaysim-automation-exercise-javascript-cypress`
 1. Run `npm install`.
 
 ### Run tests
+#### Step 1: Set the enviornment variables
+On your Terminal/Command prompt, set the username and password environment variables. These will be used by the test to login to the website.
+##### On Linux/Mac
+Run the below commands:
+
+`export CYPRESS_USERNAME=<username provided in your instrcutions>`
+
+`export CYPRESS_PASSWORD=<password provided in your instructions>`
+
+##### On Windows
+Run the below commands:
+
+`set CYPRESS_USERNAME=<username provided in your instructions>`
+
+`set CYPRESS_PASSWORD=<password provided in your instructions>`
+
+#### Step 2: Run the test
 From inside the `amaysim-automation-exercise-javascript-cypress` folder, run the command `npx cypress run --browser chrome --headed`.
 
 (You can also run `npx cypress open` to open the Cypress runner window. This might be useful while developing the test.)
 
 ## How to submit your code
 
-**Please make all your changes on your fork, and NOT on the original repo.**
-
-### Push your changes into your forked repo
+### Push your changes into your repo
 1. Run `git status` to see all local changes.
 2. Once you are happy with the changes, run `git add .` to stage all your local changes.
 3. Run `git commit -m "<a commit message of your choice>"` to commit your changes.
-4. Run `git push` to push your changes to your forked repository.
+4. Run `git push` to push your changes to your repository.
 
 *ps: Feel free to use whatever steps you're familiar with to commit/push. You do not have to follow the exact same steps above. Some candidates feel more comfortable using GUI-based tools. Feel free to commit as you go and not just at the end*
 
-### Send us a link to this fork
-After you're done with your changes, send us a link to your repo.
+### Let the recruiter know
+After you're done with your changes, email the recruiter to let them know you're done, and what your github username is.
