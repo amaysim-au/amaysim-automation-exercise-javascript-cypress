@@ -7,8 +7,8 @@ Base Test framework for a test automation exercise. This version is built with c
 ### Tests
 1. All tests are in the folder `cypress/e2e`. The test files have the name suffix `.spec.cy.js`.
 1. There's currently only one test `cypress/e2e/mobile_usage_history.spec.cy.js`. This test does the below:
-   1. Visit the amaysim home page, login as an existing customer and view the dashboad page. The username and password are read from the environment variables `CYPRESS_USERNAME` and `CYPRESS_PASSWORD`.
-   1. From the dashboard page, click on the mobile service tile go to the mobile plan details page.
+   1. Visit the amaysim home page, login as an existing customer and view the dashboard page. The username and password are read from the environment variables `CYPRESS_USERNAME` and `CYPRESS_PASSWORD`.
+   1. From the dashboard page, click on the mobile service tile to go to the mobile plan details page.
    1. On the Mobile Plan details page, click on the Usage History to see the usage history page, and perform a search in that page.
 1. The tests use the Page Object Model. The page classes are in `cypress/e2e/pageObjects`.
 1. This Cypress framework works best in the headed `Chrome` browser.
@@ -28,10 +28,10 @@ Install `git`. Please google for installation instructions. If you already have 
 Install `node` and `npm` on your machine. Please google for installation instructions. If you already have this installed, you dont need to do it again.
 
 ### Clone the repository
-Checkout the code, by running this in your terminal/command line: `git clone git@github.com:<your github username>/amaysim-automation-exercise-javascript-cypress.git`
+Checkout the code, by running this in your terminal/command line: `git clone git@github.com:work-for-amaysim/cypress-test-automation-exercise-<your github username>.git`
 
 ### Install dependancies
-1. Go to your folder where you checked out the code: `cd amaysim-automation-exercise-javascript-cypress`
+1. Go to your folder where you checked out the code: `cd cypress-test-automation-exercise-<your github username>`
 1. Run `npm install`.
 
 ### Run tests
@@ -40,7 +40,7 @@ On your Terminal/Command prompt, set the username and password environment varia
 ##### On Linux/Mac
 Run the below commands:
 
-`export CYPRESS_USERNAME=<username provided in your instrcutions>`
+`export CYPRESS_USERNAME=<username provided in your instructions>`
 
 `export CYPRESS_PASSWORD=<password provided in your instructions>`
 
@@ -52,7 +52,7 @@ Run the below commands:
 `set CYPRESS_PASSWORD=<password provided in your instructions>`
 
 #### Step 2: Run the test
-From inside the `amaysim-automation-exercise-javascript-cypress` folder, run the command `npx cypress run --browser chrome --headed`.
+From inside the `cypress-test-automation-exercise-<your github username>` folder, run the command `npx cypress run --browser chrome --headed`.
 
 (You can also run `npx cypress open` to open the Cypress runner window. This might be useful while developing the test.)
 
@@ -61,7 +61,7 @@ From inside the `amaysim-automation-exercise-javascript-cypress` folder, run the
 ### Complete the exercise
 Please complete your exercise as per the instructions provided by the recruiter.
 
-**Prioritise  Quality  over  Quantity  in  your  tests. Your  code submission  will  be assessed more  on  how  well  written and how well structured the code is, rather than number of tests.**
+**Prioritise  Quality  over  Quantity  in  your  tests. Your  code submission  will  be assessed more on how well written and how well structured the code is, rather than number of tests.**
 ### Push your changes into your repo
 1. Run `git status` to see all local changes.
 2. Once you are happy with the changes, run `git add .` to stage all your local changes.
