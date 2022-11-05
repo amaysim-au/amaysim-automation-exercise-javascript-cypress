@@ -5,12 +5,12 @@ class HomePage extends BasePage {
   constructor() {
     super()
     this.url = '/'
-    this.mainElement = '#main'
+    this.logo = 'a[aria-label="Amaysim"]'
     this.accountLink = 'a[href="/my-account/login"]'
   }
 
   goToLoginPage() {
-    cy.get(this.mainElement)
+    cy.get(this.logo)
       .should('be.visible')
     cy.get(this.accountLink)
       .filter(':visible')
